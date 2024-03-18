@@ -9,6 +9,7 @@ public class TicTacToeUI extends JFrame {
     private JButton oButton;
     private JButton exitButton;
     private JButton[][] grid;
+    private char currentPlayer;
 
     public TicTacToeUI() throws HeadlessException {
         this.placeButton = new JButton("Place");
@@ -16,6 +17,7 @@ public class TicTacToeUI extends JFrame {
         this.xButton = new JButton("Place X");
         this.oButton = new JButton("Place O");
         this.grid = new JButton[3][3];
+        currentPlayer = 'X';
         setTitle("TicTacToe");
         setSize(500, 500);
         add(placeButton, BorderLayout.SOUTH);
@@ -23,5 +25,13 @@ public class TicTacToeUI extends JFrame {
         add(xButton,BorderLayout.SOUTH);
         add(oButton, BorderLayout.EAST);
         setVisible(true);
+
+        for (int row =0; row<3;row++){
+            for (int col = 0; col<3;col++){
+                JButton button = new JButton();
+                button.setFont(new Font("Arial",Font.BOLD,40));
+                button.addActionListener(new);
+            }
+        }
     }
 }
