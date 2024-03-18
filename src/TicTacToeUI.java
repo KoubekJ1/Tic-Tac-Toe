@@ -24,14 +24,23 @@ public class TicTacToeUI extends JFrame {
         add(exitButton, BorderLayout.NORTH);
         add(xButton,BorderLayout.SOUTH);
         add(oButton, BorderLayout.EAST);
-        setVisible(true);
+
 
         for (int row =0; row<3;row++){
             for (int col = 0; col<3;col++){
                 JButton button = new JButton();
                 button.setFont(new Font("Arial",Font.BOLD,40));
-                button.addActionListener(new);
+                button.addActionListener(new ButtonClickListener(row, col));
+                add(button);
+                grid[row][col] = button;
             }
         }
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
+    }
+
+    public char getCurrentPlayer() {
+        return currentPlayer;
     }
 }
