@@ -1,4 +1,7 @@
 package src;
 
-public class TicTacToeUI {
+import javax.swing.*;
+
+public class TicTacToeUI extends JFrame {
+
 }
