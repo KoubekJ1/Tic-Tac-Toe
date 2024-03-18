@@ -1,7 +1,9 @@
 package src;
 
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        TicTacToeUI ticTacToeUI = new TicTacToeUI();
+        SwingUtilities.invokeLater(TicTacToeUI::new);
     }
 }
