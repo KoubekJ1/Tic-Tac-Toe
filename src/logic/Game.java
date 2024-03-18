@@ -19,4 +19,9 @@ public class Game {
         }
     }
 
+    public static void setTilePressed(int x, int y, int player) {
+        game.tiles[x][y].setUsed(true);
+        game.tiles[x][y].setPlayer(player);
+    }
+
 }
