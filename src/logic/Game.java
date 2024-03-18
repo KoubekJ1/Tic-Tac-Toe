@@ -28,7 +28,7 @@ public class Game {
         if (player == 'X') {
             return 'O';
         } else {
-            return 'Y';
+            return 'X';
         }
     }
 
