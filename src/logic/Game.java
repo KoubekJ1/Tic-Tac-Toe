@@ -24,4 +24,12 @@ public class Game {
         game.tiles[x][y].setPlayer(player);
     }
 
+    public static char switchPlayer(char player) {
+        if (player == 'X') {
+            return 'O';
+        } else {
+            return 'Y';
+        }
+    }
+
 }
